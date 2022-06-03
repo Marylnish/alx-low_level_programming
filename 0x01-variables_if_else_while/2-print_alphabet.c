@@ -1,18 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_alphabet_x10 - Print the alphabet 10 times
+ * main - Entry point of code
+ *
+ * Description: Prints the alphabet using ascii values
+ *
+ * Return: Always 0
  */
 
-void print_alphabet_x10(void)
+int main(void)
 {
-	int letter;
-	int i;
+	char letter;
 
-	for (i = 0; i <= 9; i++)
+	letter = 'a';
+	while (letter != '{')
 	{
-		for (letter = 'a'; letter <= 'z'; letter++)
-			_putchar(letter);
-		_putchar ('\n');
+		putchar (letter);
+		letter++;
 	}
+	putchar('\n');
+	return (0);
 }
